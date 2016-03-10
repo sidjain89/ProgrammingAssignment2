@@ -1,7 +1,10 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 
-## Write a short comment describing this function
+# 1. This function will create a cached matrix
+# 2. get and set are used to encapsulate 
+# insert and retrieval matrix and its inverse
+# 3. << operator takes the value from the global cache.
 
 makeCacheMatrix <- function(x = matrix()) {
   inv <- NULL
@@ -17,7 +20,10 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+# 1. The following function returns the inverse of the matrix. 
+# 2. Checks if inverse was computed by querying the cache
+# 3. If inverse exists in cache return the cached value else
+# 4. calculate the inverse and insert the value in the cache via setinverse function.
 
 cacheSolve <- function(x = matrix(), ...) {
   ## Return a matrix that is the inverse of 'x'
